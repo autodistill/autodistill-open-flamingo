@@ -11,16 +11,19 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="autodistill-base-model",
+    name="autodistill-open-flamingo",
     version=version,
-    author="",
-    author_email="",
-    description="Model for use with Autodistill",
+    author="Roboflow",
+    author_email="support@roboflow.com",
+    description="Open Flamingo base model for use with Autodistill",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="",
     install_requires=[
-        # list your requires
+        "autodistill",
+        "supervision",
+        "numpy",
+        "open_flamingo"
     ],
     packages=find_packages(exclude=("tests",)),
     extras_require={
