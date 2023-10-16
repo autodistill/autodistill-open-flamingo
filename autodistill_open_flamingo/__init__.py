@@ -1,3 +1,3 @@
-from autodistill_base_model.model import ModelName
+from autodistill_open_flamingo.open_flamingo import OpenFlamingo
 
 __version__ = "0.1.0"
